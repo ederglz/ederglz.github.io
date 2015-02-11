@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+	<link rel="stylesheet" href="css/styles.css">
+	<title>@ederyairr / Frontend Developer</title>
+</head>
+<body>
+	<div class="wrapper">
+		<header class="Header">
+			<figure class="img-container Logo">
+				<img src="images/logo.png" alt="" class="img Logo-image">
+			</figure>
+			<figcaption class="Logo-description" id="description">
+					Eder Yair
+			</figcaption>
+			<button class="Header-btn btn btn-yellow btn-purple icon-menu" id="Menu-btn"></button>
+			<nav class="Menu" id="Menu">
+				<ul class="Menu-list">
+					<li class="Menu-item"> 
+						<a href="#About" class="link">
+							Acerca de
+						</a>
+					</li>
+					<li class="Menu-item"> 
+						<a href="#Projects" class="link">
+							Proyectos
+						</a>
+					</li>
+					<li class="Menu-item"> 
+						<a href="#" class="link">
+							Blog
+						</a>
+					</li>
+					<li class="Menu-item"> 
+						<a href="#Contact" class="link">
+							Contacto
+						</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
+		<section class="Welcome">
+			<div class="Welcome-text Text-center">
+				<span class="Welcome-msg Title">
+					Hola
+				</span>
+				<h1 class="Welcome-msg Title">
+					Me llamo Eder Yair
+				</h1>
+				<span class="Welcome-msg Title">
+					y soy un Fronted Developer
+				</span>
+			</div>
+		</section>
+	</div>
+	<section class="About-header" id="About">
+		<div class="About-header-text">
+			<h2 class="About-header-msg Title Text-center">
+				Acerca de mí
+			</h2>
+		</div>
+	</section>
+	<section class="Aboutme Text-center">
+		<figure class="img-container Aboutme-avatar-container">
+			<img src="images/avatar.png" alt="" class="img Aboutme-avatar">
+		</figure>
+		<div class="Aboutme-txt">
+			<p class="Aboutme-msg">Soy un apasionado del Frontend</p>
+			<p class="Aboutme-msg">Me gusta el rock clásico y la Coca-Cola</p>
+			<p class="Aboutme-msg">En mi tiempo libre codeo y aprendo</p>
+		</div>
+		<div class="Aboutme-formation">
+			<figure class="Aboutme-imgContainer img-container">
+				<img src="images/platzi_icon.png" alt="" class="img">
+			</figure>
+			<a href="https://platzi.com/usuarios/Ederyairr/" class="Aboutme-link link">Formado en Platzi</a>
+		</div>
+	</section>
+	<section class="Projects" id="Projects">
+		<h2 class="Projects-title Text-center Title">
+			Proyectos
+		</h2>
+		<div class="Projects-project">
+			<figure class="img-container Projects-project-container Projects-project-todo"
+			>
+				<a href="http://ederyair.github.io/To-DoApp/">
+				<img src="images/todo.png" alt="" class="Projects-img img">
+			</a>
+			</figure>
+			<figcaption class="Projects-img-description Text-center">
+				<a href="http://ederyair.github.io/To-DoApp/" class="link">To-Do App</a>
+			</figcaption>
+		</div>
+		<div class="Projects-project">
+			<figure class="img-container Projects-project-container big-image"
+			>
+				<a href="https://chrome.google.com/webstore/detail/platzi-notificaciones/cmadlbbfpllibmjklpneiapjfjmojlhm">
+				<img src="images/platzi.png" alt="" class="Projects-img img">
+			</a>
+			</figure>
+			<figcaption class="Projects-img-description Text-center">
+				<a href="https://chrome.google.com/webstore/detail/platzi-notificaciones/cmadlbbfpllibmjklpneiapjfjmojlhm" class="link">Platzi Clase Notificaciones
+				</a>
+			</figcaption>
+		</div>
+		<div class="Projects-project">
+			<figure class="img-container Projects-project-container big-image">
+				<a href="http://ederyair.github.io/GetDiscography/">
+				<img src="images/getdiscography.png" alt="" class="Projects-img img">
+			</a>
+			</figure>
+			<figcaption class="Projects-img-description Text-center">
+				<a href="http://ederyair.github.io/GetDiscography/" class="link">Obtener Discografía
+				</a>
+			</figcaption>
+		</div>
+	</section>
+	<footer class="Contact" id="Contact">
+		<h2 class="Contact-title Text-center Title">Contacto</h2>
+		<div class="Contact-social">
+			<ul class="Contact-social-list">
+				<li class="Contact-social-list-item">
+					<a href="mailto:ederyairnglz@gmail.com" class="link icon-envelope"></a>	
+				</li>
+				<li class="Contact-social-list-item">
+					<a href="https://twitter.com/ederyairr" class="link icon-twitter"></a>
+				</li>
+				<li class="Contact-social-list-item">
+					<a href="https://github.com/ederyair" class="link icon-github"></a>
+				</li>
+			</ul>
+		</div>
+	</footer>
+	<script src="libs/jquery.js"></script>
+	<script>
+
+			var button = $('#Menu-btn')
+			var description = $('#description')
+			var menu = $('#Menu')
+			$('button').on('click', function(){
+				menu.toggleClass('is-active')
+				description.toggleClass('is-active')
+			})
+	</script>
+</body>
+</html>

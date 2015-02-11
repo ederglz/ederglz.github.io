@@ -1,0 +1,171 @@
+@import 'fonts.css'
+@import 'nib'
+@import 'normalize.styl'
+yellow = #EEFF41
+black = #151515
+purple = #8C489F
+gray = #F1F1F1
+border(color)
+	border 1px solid color
+position(top = '', right = '', bottom = '', left = '')
+	position absolute
+	if top
+		top top
+	if right
+		right right
+	if bottom
+		bottom bottom
+	if left
+		left left
+background-image(url='', repeat='', size='', position='',attachment='')
+	background-image url(url)
+	background-repeat repeat
+	background-position position
+	background-size size
+	if attachment
+		background-attachment attachment
+
+body
+	font-size 16px
+.img-container
+	margin 0
+.img
+	width 100%
+.link
+	color black
+	text-decoration none
+.Aboutme
+	background-color gray
+	&-avatar-container
+		margin 0 auto
+		width 150px
+	&-avatar
+		border-radius 50%
+	&-imgContainer
+		display inline-block
+		width 50px
+		
+.About-header
+	background-image('../images/about.jpg', no-repeat, cover, 50% 50%, fixed)
+	height 200px
+	&-text
+		color white
+		position relative
+		line-height 150px
+	&-msg
+		font-weight normal
+.Contact
+	background-color gray
+	&-title
+		margin-top 1em
+.Logo
+	display table-cell
+	width 100px
+	&-description
+		display table-cell
+		text-transform uppercase
+		transition 1s
+		vertical-align middle
+		width 60%
+		&.is-active
+			width 40%
+.Contact
+	&-social-list
+		border-collapse collapse
+		display table
+		margin 0
+		width 100%
+		&-item
+			display table-cell
+			text-align center
+.Header
+	color white
+	display table
+	position relative
+	transition 1s
+	width 100%
+	&:hover
+		background rgba(white, 0.5)
+		color black
+	&-btn
+		display table-cell
+		margin-top -50px
+		vertical-align middle
+.Menu
+	position(-150px,0px)
+	height 150px
+	transition 1s
+	&-list
+		list-style none
+	&-item
+		margin-top 1em
+	&.is-active
+		top 0
+.Projects
+	&-title
+		margin-top 1em
+	&-project
+		&-container
+			margin 1em auto
+		&-todo
+			width 200px
+.Welcome
+	min-width 200px
+	padding-bottom 10px
+	height 100px
+	&-msg
+		color white
+		display block
+		font-weight normal
+		line-height 40px
+		margin 0
+	&-text
+		line-height 100%
+.wrapper
+	background-image('../images/header.jpg', no-repeat, 100%)
+	height 200px
+//OOCSS
+.btn
+	border-radius 100%
+	padding 8px
+	color black
+	&:active
+		transform scale(.9)
+	&-purple
+		background purple
+		border (purple)
+	&-shadow
+		box-shadow 0 1px rgba(black,.5)
+.Text-center
+	text-align center
+.Title
+	font-size 1.5rem
+	font-weight normal
+@media (min-width: 789px)
+	body
+		background-image('../images/header.jpg', no-repeat, 100%)
+	.About-header
+		height 200px
+		margin-top 36%
+	.Header
+		&-btn
+			display none
+	.Menu
+		position(0px,0px)
+		&-item
+			display inline-block
+			font-size 1.2rem
+			margin-right 1em
+	.Projects
+		.big-image
+			width 350px
+	.Welcome
+		height 200px
+		&-text
+			line-height 100px
+		&-msg
+			line-height 150px
+	.wrapper
+		background transparent
+	.Title
+		font-size 4rem
