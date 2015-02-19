@@ -1,6 +1,7 @@
 @import 'fonts.css'
 @import 'nib'
 @import 'normalize.styl'
+blue = #2DB5B6
 yellow = #EEFF41
 black = #151515
 purple = #8C489F
@@ -66,9 +67,6 @@ body
 		text-transform uppercase
 		transition 1s
 		vertical-align middle
-		width 60%
-		&.is-active
-			width 40%
 .Contact
 	&-social-list
 		border-collapse collapse
@@ -91,13 +89,18 @@ body
 		display table-cell
 		margin-top -50px
 		vertical-align middle
+		transition 1s
+		&.is-active
+			margin-right 115px
 .Menu
+	background blue
 	position(-150px,0px)
 	height 150px
 	transition 1s
 	&-list
 		list-style none
 	&-item
+		text-align left
 		margin-top 1em
 	&.is-active
 		top 0
@@ -151,6 +154,7 @@ body
 		&-btn
 			display none
 	.Menu
+		background-color transparent
 		position(0px,0px)
 		&-item
 			display inline-block
