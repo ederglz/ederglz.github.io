@@ -121,8 +121,8 @@ body{font-size:16px}
 .btn-shadow{-webkit-box-shadow:0 1px rgba(21,21,21,0.5);box-shadow:0 1px rgba(21,21,21,0.5)}
 .Text-center{text-align:center}
 .Title{font-size:1.5rem;font-weight:normal}
-@media (min-width: 789px){body{background-image:url("../images/header.jpg");background-repeat:no-repeat;background-position:'';-webkit-background-size:100%;-moz-background-size:100%;background-size:100%;}
-.About-header{height:200px;margin-top:36%}
+@media (min-width: 1000px){body{background-image:url("../images/header.jpg");background-repeat:no-repeat;background-position:'';-webkit-background-size:100%;-moz-background-size:100%;background-size:100%;}
+.About-header{background-attachment:initial;height:200px;margin-top:36%}
 .Header-btn{display:none}
 .Menu{background-color:transparent;position:absolute;top:0;right:0;}
 .Menu-item{display:inline-block;font-size:1.2rem;margin-right:1em}
