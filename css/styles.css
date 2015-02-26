@@ -132,4 +132,5 @@ body{font-size:16px}
 .Welcome-msg{line-height:150px}
 .wrapper{background:transparent}
 .Title{font-size:4rem}
+}@media (min-width: 768px){.About-header{background-attachment:initial}
 }
