@@ -91,7 +91,7 @@ body{font-size:16px}
 .Aboutme-avatar-container{margin:0 auto;width:150px}
 .Aboutme-avatar{-webkit-border-radius:50%;border-radius:50%}
 .Aboutme-imgContainer{display:inline-block;width:50px}
-.About-header{background-image:url("../images/about.jpg");background-repeat:no-repeat;background-position:50% 50%;-webkit-background-size:cover;-moz-background-size:cover;background-size:cover;background-attachment:fixed;height:200px;}
+.About-header{background-image:url("../images/about.jpg");background-repeat:no-repeat;background-position:50% 50%;-webkit-background-size:cover;-moz-background-size:cover;background-size:cover;background-attachment:initial;height:200px;}
 .About-header-text{color:#fff;position:absolute;position:relative;position:relative;0:0;line-height:150px}
 .About-header-msg{font-weight:normal}
 .Contact{background-color:#f1f1f1;}
@@ -122,7 +122,7 @@ body{font-size:16px}
 .Text-center{text-align:center}
 .Title{font-size:1.5rem;font-weight:normal}
 @media (min-width: 1000px){body{background-image:url("../images/header.jpg");background-repeat:no-repeat;background-position:'';-webkit-background-size:100%;-moz-background-size:100%;background-size:100%;}
-.About-header{background-attachment:initial;height:200px;margin-top:36%}
+.About-header{background-attachment:fixed;height:280px;margin-top:36%}
 .Header-btn{display:none}
 .Menu{background-color:transparent;position:absolute;top:0;right:0;}
 .Menu-item{display:inline-block;font-size:1.2rem;margin-right:1em}
@@ -132,5 +132,4 @@ body{font-size:16px}
 .Welcome-msg{line-height:150px}
 .wrapper{background:transparent}
 .Title{font-size:4rem}
-}@media (min-width: 768px){.About-header{background-attachment:initial}
 }

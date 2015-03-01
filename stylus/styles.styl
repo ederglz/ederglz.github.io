@@ -47,7 +47,7 @@ body
 		width 50px
 		
 .About-header
-	background-image('../images/about.jpg', no-repeat, cover, 50% 50%, fixed)
+	background-image('../images/about.jpg', no-repeat, cover, 50% 50%, initial)
 	height 200px
 	&-text
 		color white
@@ -148,8 +148,8 @@ body
 	body
 		background-image('../images/header.jpg', no-repeat, 100%)
 	.About-header
-		background-attachment initial
-		height 200px
+		background-attachment fixed
+		height 280px
 		margin-top 36%
 	.Header
 		&-btn
@@ -174,6 +174,3 @@ body
 		background transparent
 	.Title
 		font-size 4rem
-@media (min-width: 768px)
-	.About-header
-		background-attachment initial
