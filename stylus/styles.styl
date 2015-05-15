@@ -35,6 +35,7 @@ body
 	&-img-container
 		width 100%
 .Contact
+	position relative
 	background-color blackB
 	&-title
 		padding-top 1em
@@ -87,13 +88,23 @@ body
 			margin 1em 0
 			&-container
 				width 50%
-
+.loading
+	background-color rgba(0, 0, 0, 0.93)
+	display none
+	height 100%
+	position absolute
+	top 0
+	width 100%
+	&-img
+		margin-top 25%
 .img
 	width 100%
 .text-shadow
 	text-shadow 1px 2px 8px blackA
 .title-white
 	color whiteA
+.u-display
+	display block
 .u-inlineblock
 	display inline-block
 .u-greentext

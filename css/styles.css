@@ -51,7 +51,7 @@ body{font-size:16px;font-family:'Raleway';height:100%}
 .About-picture,.About-description{width:50%;color:#6c6d6e;margin:1em}
 .About-title{margin-bottom:1em;padding-top:2em}
 .About-img-container{width:100%}
-.Contact{background-color:#0a0c0e;}
+.Contact{position:relative;background-color:#0a0c0e;}
 .Contact-title{padding-top:1em}
 .Contact-form-item{display:block;margin:1em auto;font-size:1.2em;width:300px}
 .Contact-form-submit{background-color:#28a228;border:none;color:#eae6e7;padding:1em;width:300px;margin-bottom:1em}
@@ -65,9 +65,12 @@ body{font-size:16px;font-family:'Raleway';height:100%}
 .Projects-title{padding:2em 0}
 .Projects-project-img{margin:1em 0;}
 .Projects-project-img-container{width:50%}
+.loading{background-color:rgba(0,0,0,0.93);display:none;height:100%;position:absolute;top:0;width:100%;}
+.loading-img{margin-top:25%}
 .img{width:100%}
 .text-shadow{text-shadow:1px 2px 8px #15191d}
 .title-white{color:#eae6e7}
+.u-display{display:block}
 .u-inlineblock{display:inline-block}
 .u-greentext{color:#28a228}
 .u-center{text-align:center;margin:0 auto}
