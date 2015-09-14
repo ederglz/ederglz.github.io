@@ -1,109 +1,39 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es"></html>
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-	<link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" href="css/styles.css">
-	<title>@ederyairr / Frontend Developer</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title>@ederyairr</title>
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700|Asap:400,700" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="./public/css/app.css">
 </head>
 <body>
-	<header class="Header u-center">
-		<div class="Header-wrapper">
-			<h1 class="Header-title text-shadow title-white">Eder Yair</h1>
-			<h2 class="Header-description text-shadow">Frontend Web Developer</h2>
-			<nav class="Menu">
-				<ul class="Menu-list">
-					<a href="#projects" id="projectsButton"><li class="Menu-item">Projects</li></a>
-					<a href="#about" id="aboutButton"><li class="Menu-item">About</li></a>
-					<a href="#contact" id="contactButton"><li class="Menu-item">Contact</li></a>
-				</ul>
-			</nav>
-		</div>
-	</header>
-	<section class="Projects" id="projects">
-		<h2 class="Projects-title u-center">Projects</h2>
-		<div class="Projects-project u-center">
-			<a href="https://github.com/ederyair/Platzi">
-				<figure class="Projects-project-img-container u-center">
-					<img src="/images/platzi.png" alt="" class="Projects-project-img img">
-				</figure>
-				<figcaption class="Projects-project-img-description">
-					<h2>Extensión Chrome Platzi</h2>
-					Te notifica 10 minutos antes de que la clase del curso actual de Platzi esté por iniciar				
-				</figcaption>
-			</a>
-		</div>
-		<div class="Projects-project u-center">
-			<a href="https://github.com/ederyair/TwitchNotifications">
-				<figure class="Projects-project-img-container u-center">
-					<img src="/images/twitch.png" alt="" class="Projects-project-img img">
-				</figure>
-				<figcaption class="Projects-project-img-description">
-					<h2>Extensión Chrome Twitch</h2>
-					Te notifica cuando alguien que tu sigues en Twitch comienza un stream		
-				</figcaption>
-			</a>
-		</div>
-		<div class="Projects-project u-center">
-			<a href="http://ederyair.github.io/GetDiscography">
-				<figure class="Projects-project-img-container u-center">
-					<img src="/images/getdiscography.png" alt="" class="Projects-project-img img">
-				</figure>
-				<figcaption class="Projects-project-img-description">
-					<h2>Obtener Discografía</h2>
-
-					Obtén la discografía de tus artistas favoritos				
-				</figcaption>
-			</a>
-		</div>
-		
-	</section>
-	<section class="About"  id="about">
-		<div class="About-container u-center">
-			<h2 class="About-title text-shadow title-white">About me</h2>
-			<div class="About-picture u-inlineblock">
-				<figure class="About-img-container">
-					<img src="/images/avatar.jpg" alt="" class="About-img img">
-				</figure>
-			</div>
-			<div class="About-description u-inlineblock">
-				<p>Soy un apasionado del Frontend</p>
-				<p>Me gusta el rock clásico y la Coca-Cola</p>
-				<p>En mi tiempo libre codeo y aprendo</p>
-
-				<p>Me formé en <a href="https://platzi.com/usuarios/ederyairr" class="u-greentext">Platzi</a></p>
-
-				<p>Maquetar en HTML5</p>
-
-				<p>Darle diseño en CSS3 con ayuda de stylus</p>
-
-				<p>Y finalmente darle vida con Javascript, con Backbone, Ember, React.js...</p>
-
-			</div>
-		</div>
-		<div class="Menu u-center">
-			<ul class="Menu-list">
-				<a href="https://twitter.com/ederyairr"><li class="Menu-item icon-twitter"> Twitter</li></a>
-				<a href="https://github.com/ederyair"><li class="Menu-item icon-github4"> Github</li></a>
-				<a href="https://www.linkedin.com/profile/view?id=343763852"><li class="Menu-item icon-linkedin2"> Linkedin</li></a>
-			</ul>
-		</div>
-	</section>
-	<section class="Contact u-center" id="contact">
-		<h2 class="Contact-title title-white">Contact Me</h2>
-		<form id="myForm" class="Contact-form">
-			<input type="text" class="Contact-form-item"placeholder="Name" id="Name">
-			<input type="email" class="Contact-form-item"placeholder="e-mail" id="Mail">
-			<input type="text" class="Contact-form-item"placeholder="Subject" id="Subject">
-			<textarea name="" cols="30" rows="10" class="Contact-form-item" placeholder="Message" id="Content"></textarea>
-			<input type="submit" class="Contact-form-submit" id="btn">
-		</form>
-		<div class="loading" id="Loading">
-			<img src="images/loading.gif" alt="" class="loading-img">
-		</div>
-	</section>
-	<script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.0.js"></script>
-	<script src="js/app.js"></script>
+  <div class="Wrapper u-textCenter">
+    <header class="Layout-Header">
+      <h1 class="Layout-Header-title">Eder Yair</h1>
+    </header>
+    <section class="Layout-Main u-textCenter">
+      <div class="Layout-Main-about">
+        <figure class="Layout-Main-about-imageContainer"><img src="./public/images/avatar.png" alt="" class="Layout-Main-about-image"></figure>
+        <h2 class="Main-title">Hi!</h2>
+        <p class="Main-bio">I'm a 19 y.o Frontend Developer from Mexico City and I love the web</p>
+      </div>
+      <div class="Layout-Main-work">
+        <h2 class="Layout-Main-title">Some Personal projects</h2>
+        <figure class="Layout-Main-work-imageContainer"><img src="./public/images/soccer.png" alt=""></figure>
+        <h3>Soccer Matches</h3>
+        <p class="Layout-Main-work-description">Web App to see the soccer matches of the day</p><a target="_blank" href="http://ederyair.github.io/soccer/" class="Layout-Main-work-link u-specialLink">Visit Site </a><a target="_blank" href="https://github.com/ederyair/soccer" class="Layout-Main-work-link u-specialLink">Repo</a>
+        <figure class="Layout-Main-work-imageContainer"><img src="./public/images/discography.png" alt=""></figure>
+        <h3>Get Discography</h3>
+        <p class="Layout-Main-work-description">Web App to get the discography of your favorite artist</p><a target="_blank" href="ederyair.github.io" class="Layout-Main-work-link u-specialLink">Visit Site</a><a target="_blank" href="https://github.com/ederyair/ederyair.github.io" class="Layout-Main-work-link u-specialLink">Repo</a>
+      </div>
+    </section>
+    <footer class="Layout-Footer">
+      <ul class="Layout-Footer-list">
+        <li class="Footer-item"><a href="https://github.com/ederyair" class="u-specialLink u-specialLink--github">Github</a></li>
+        <li class="Footer-item"><a href="https://twitter.com/ederyairr" class="u-specialLink u-specialLink--twitter">Twitter</a></li>
+        <li class="Footer-item"><a href="https://mx.linkedin.com/pub/eder-yair-negrete-gonzález/97/161/4b8" class="u-specialLink u-specialLink--linkedin">Linkedin</a></li>
+      </ul>
+    </footer>
+  </div>
 </body>
-</html>
