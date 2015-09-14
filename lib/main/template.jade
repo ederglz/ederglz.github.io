@@ -1,19 +1,19 @@
 div(class="Layout-Main-about")
-	figure(class="Layout-Main-about-imageContainer")
-		img(class="Layout-Main-about-image",src="./public/images/avatar.png", alt="")
-	h2(class="Main-title") Hi!
-	p(class="Main-bio") I'm a 19 y.o Frontend Developer from Mexico City and I love the web
+	include ../about/template.jade
 div(class="Layout-Main-work")
-	h2(class="Layout-Main-title") Some Personal projects
-	figure(class="Layout-Main-work-imageContainer")
-		img(src="./public/images/soccer.png", alt="")
-	h3 Soccer Matches
-	p(class="Layout-Main-work-description") Web App to see the soccer matches of the day
-	a(class="Layout-Main-work-link u-specialLink" target="_blank" href="http://ederyair.github.io/soccer/") Visit Site 
-	a(class="Layout-Main-work-link u-specialLink" target="_blank" href="https://github.com/ederyair/soccer") Repo
-	figure(class="Layout-Main-work-imageContainer")
-		img(src="./public/images/discography.png", alt="")
-	h3 Get Discography
-	p(class="Layout-Main-work-description") Web App to get the discography of your favorite artist
-	a(class="Layout-Main-work-link u-specialLink" target="_blank" href="ederyair.github.io") Visit Site
-	a(class="Layout-Main-work-link u-specialLink" target="_blank" href="https://github.com/ederyair/ederyair.github.io") Repo
+	h2(class="Layout-Main-work-title") Some Personal projects
+	div(class="Layout-Main-job")
+		each val in [1,2]
+			if val == 1
+				- title = "Soccer Matches"
+				- desc = "Web App to see the soccer matches of the day"
+				- site = "http://ederyair.github.io/soccer/"
+				- repo = "https://github.com/ederyair/soccer"
+				- image = "soccer.png"
+			else
+				- title = "Get Discography"
+				- desc = "Web App to get the discography of your favorite artist"
+				- site = "http://ederyair.github.io/GetDiscography/"
+				- repo = "https://github.com/ederyair/GetDiscography"
+				- image = "discography.png"
+			include ../jobs/template.jade

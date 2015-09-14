@@ -7,6 +7,7 @@ margin(n = 0)
 @import "layout/styles.styl"
 @import "header/styles.styl"
 @import "main/styles.styl"
+@import "about/styles.styl"
 @import "footer/styles.styl"
 blackA = #313131
 blueA = #35A2ED
@@ -37,7 +38,7 @@ img
 	margin-top 1em
 	margin-right 1em
 	padding-bottom 3px
-	transition 0.5s all ease
+	transition 0.3s all ease
 	&--twitter
 		&:hover
 			linkBorder(blueA)
@@ -51,9 +52,9 @@ img
 			linkBorder(grayA)
 			color grayA
 	&:hover
-		padding-bottom 0.5em
+		padding-bottom 10px
+.u-inline-block
+	display inline-block
+	vertical-align middle
 .u-textCenter
 	text-align center
-// @media (min-width: 751px){
-	
-// }
