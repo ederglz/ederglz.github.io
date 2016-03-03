@@ -1,0 +1,16 @@
+{
+  "name": "personal-portfolio",
+  "version": "2.0.0",
+  "description": "Portfolio",
+  "dependencies": {
+    "browserify": "^12.0.1",
+    "jade": "^1.11.0",
+    "jadeify": "^4.5.0",
+    "jquery": "^2.1.4",
+    "page.js": "^4.13.3"
+  },
+  "scripts": {
+    "jade": "jade -w -P lib/*.jade -o .",
+    "styl": "stylus -u nib -c -w lib/app.styl -o public/css"
+  }
+}
