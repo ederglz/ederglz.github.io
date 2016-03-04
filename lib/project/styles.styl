@@ -1,0 +1,40 @@
+.Project
+	display flex
+	flex-direction column
+	justify-content center
+	align-items center
+	padding-bottom 1em
+	background-color white
+	width 90%
+	margin 0 auto
+	&-actions
+		display flex
+		justify-content space-between
+		span
+			transition 0.5s
+			&.is-active
+				transform rotate(45deg)
+		a
+			color grayA
+			text-decoration none
+			font-weight bolder
+	&-image
+		margin 10px
+		width 60%
+		img
+			border-radius 50%
+			width 100%
+	&-info
+		margin 10px auto
+		text-align center
+		display none
+		transition 1s
+		&.is-visible
+			display block
+	&-links
+		display flex
+		justify-content space-around
+		list-style none
+		padding 0
+	&-title
+		margin 0

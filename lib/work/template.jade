@@ -1,9 +1,9 @@
 div(class="Work")
 	h2(class="Work-title") Lastest Projects
 	div(class="Work-project")
-		figure(class="Work-image")
-			img(src="./public/images/text.jpg")
-		div(class="Work-actions")
-			span(class="icon-plus")
-			a(href="" class="Work-name") Get Discography
-		div(class="Work-info") Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod vero voluptatibus necessitatibus adipisci, non sit commodi alias corporis delectus voluptas, at dicta eius esse rem, omnis iste tempore et ex?
+		- name = 'Get Discography'
+		- info = 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe dolores aliquam eveniet architecto, dolorum sequi, eum officiis placeat expedita dolorem, tempore delectus eius animi consectetur! Quidem adipisci tempora quos sunt.'
+		- image = 'yo.jpg'
+		- link = 'http://ederglz.github.io/GetDiscography'
+		- rep ='https://github.com/ederglz/GetDiscography'
+		include ../project/template.jade
