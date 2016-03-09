@@ -4,12 +4,18 @@ figure
 	margin 0
 html body
 	height 100%
+	margin 0
+	padding 0
 body
 	background-image url('../images/background.png')
 	font-family 'Muli'
-	margin 0
 .u-greenText
 	color greenA
+@media screen and (min-width: 1000px)
+	.About
+		font-size 32px
+		&-soc
+			max-width 400px
 @import 'fonts.styl'
 @import './layout/styles.styl'
 @import './about/styles.styl'
