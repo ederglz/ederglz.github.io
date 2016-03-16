@@ -1,7 +1,13 @@
 (function(){
-	var $btn = $('#plusBtn');
+	var $btn = $('.Project-actions > span');
+	var Animation = function(el){
+		this.el = el;
+		$('#' + el).toggleClass('is-active');
+		$('.' + el).slideToggle();
+	};
 	$btn.on('click', function(){
-		$(this).toggleClass('is-active');
-		$('.Project-info').slideToggle('is-visible')
+		var $selector = $(this).attr('id');
+		var proj = new Animation($selector);
+		return proj;
 	});
 })();
