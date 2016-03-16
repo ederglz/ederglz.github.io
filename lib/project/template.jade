@@ -6,6 +6,9 @@ div(class="Project")
 		span(class="icon-plus" id =""+selector)
 		a(href=""+link class="Project-name" target="_blank")=name 
 	div(class="Project-info "+selector)=info
+		ul(class="Project-stack")
+			each val in stack
+				li= val
 		ul(class="Project-links")
 			a(href=""+rep class="u-greenText" target="_blank")
 				li Repository

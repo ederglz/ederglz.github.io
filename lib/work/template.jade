@@ -2,16 +2,18 @@ div(class="Work")
 	h2(class="Work-title") Lastest Projects
 	div(class="Work-project")
 		- name = 'Get Discography'
-		- info = 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe dolores aliquam eveniet architecto, dolorum sequi, eum officiis placeat expedita dolorem, tempore delectus eius animi consectetur! Quidem adipisci tempora quos sunt.'
+		- info = 'Type the name of any artist and will provide you a list containing each album.'
+		-stack = ['Backbone.js', 'iTunes API', 'Jade', 'Stylus', 'Underscore.js']
 		- image = 'disc.jpg'
 		- link = 'http://ederglz.github.io/GetDiscography'
 		- rep ='https://github.com/ederglz/GetDiscography'
 		-selector='disc'
 		include ../project/template.jade
 		- name = 'Best Tweets by user'
-		- info = 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe dolores aliquam eveniet architecto, dolorum sequi, eum officiis placeat expedita dolorem, tempore delectus eius animi consectetur! Quidem adipisci tempora quos sunt.'
+		- info = 'Type the name of any twitter user and will give you the top 20 tweets.'
+		-stack = ['Twitter API', 'Yahoo Query Language', 'Jade', 'Stylus']
 		- image = 'twt.jpg'
-		- link = 'http://ederglz.github.io/GetDiscography'
-		- rep ='https://github.com/ederglz/GetDiscography'
+		- link = 'http://ederglz.github.io/bestTweets'
+		- rep ='https://github.com/ederglz/bestTweets'
 		-selector='twt'
 		include ../project/template.jade
