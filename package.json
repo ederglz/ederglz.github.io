@@ -11,6 +11,7 @@
   },
   "scripts": {
     "jade": "jade -w -P lib/*.jade -o .",
-    "styl": "stylus -u nib -c -w lib/app.styl -o public/css"
+    "styl": "stylus -u nib -c -w lib/app.styl -o public/css",
+    "build": "npm run jade & npm run styl & python -m SimpleHTTPServer"
   }
 }
