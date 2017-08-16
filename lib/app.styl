@@ -1,31 +1,14 @@
-blackA = #222222
-grayA = #444647
-greenA = #6AA19B
-greenB = #a5ff00
 figure
 	margin 0
 html body
 	height 100%
+	background-color #EBEBEB
 	margin 0
 	padding 0
+a
+	text-decoration none
+	&:visited
+		color black
 body
-	background-image url('../images/background.jpg')
-	background-position-x 555px
-	font-family 'Muli'
-.u-greenText
-	color greenA
-.u-greenTextB
-	color greenB
-@media screen and (min-width: 1000px)
-	.About
-		&-soc
-			max-width 400px
-	.Work
-		&-project
-			flex-wrap initial
-@import 'fonts.styl'
+	font-family 'Montserrat'
 @import './layout/styles.styl'
-@import './about/styles.styl'
-@import './work/styles.styl'
-@import './project/styles.styl'
-@import './footer/styles.styl'

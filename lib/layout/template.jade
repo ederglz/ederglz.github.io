@@ -1,7 +1,13 @@
-div(class="Layout")
-	div(class="Layout-about")
-		include ../about/template.jade
-	div(class="Layout-work")
-		include ../work/template.jade
-	footer(class="Layout-footer")
-		include ../footer/template.jade
+div(class="Layout center")
+	div.Layout-avatar
+		img(src="./public/images/avatar.jpg" class="image circle")
+	div.Layout-name
+		div.Name
+			h1.Name-title Eder Gonzalez
+			h2.Name-desc Frontend Developer
+	div.Layout-links
+		a(class="Layout-link circle icon-github-alt" target="_blank" title="Github" href="")
+		a(class="Layout-link circle icon-codepen" target="_blank" title="Codepen" href="")
+		a(class="Layout-link circle icon-linkedin2" target="_blank" title="Linkedin" href="")
+		a(class="Layout-link circle icon-twitter" target="_blank" title="Twitter" href="")
+		a(class="Layout-link circle icon-send-o" target="_blank" title="Send me an Email" href="")
